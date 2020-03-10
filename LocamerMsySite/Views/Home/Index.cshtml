@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<h1>Application de Gestion Locamer</h1>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Les Clients</h2>
+        <p>
+            Ce module vous permet de créer, modifier et supprimer des clients du camping.
+        </p>
+        @Html.ActionLink("Liste des Clients", "Index", "Clients", null, new { @class = "btn btn-primary btn-large" })
+        <br /><br />
+
+        <h2>Les Emplacements</h2>
+        <p>
+            Ce module vous permet de créer, modifier et supprimer des emplacements du camping.
+        </p>
+        @Html.ActionLink("Liste des Emplacements", "Index", "Emplacements", null, new { @class = "btn btn-primary btn-large" })
+        <br /><br />
+
+
+        <h2>Les Séjours</h2>
+        <p>
+            Ce module vous permet de créer, modifier et supprimer des Séjours du camping.<br />
+            Il permet également de générer le coût total d'un séjour en fonction des emplacements et des options du client.
+        </p>
+        @Html.ActionLink("Liste des Séjours", "Index", "Sejours", null, new { @class = "btn btn-primary btn-large" })
+        <br /><br />
+
+        <h2>Les Options</h2>
+        <p>
+            Ce module vous permet de créer, modifier et supprimer des options disponibles à la location.
+        </p>
+        @Html.ActionLink("Liste des Options", "Index", "Options", null, new { @class = "btn btn-primary btn-large" })
+
+        <br /><br />
+    </div>
+    <br /><br />
+
+    <div class="col-md-8">
+        <img src="~/image/image1.jpg" class="img-responsive" />
+        <img src="~/image/image3.jpg" class="img-responsive" />
+    </div>
+</div>
+
+
+
